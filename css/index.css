@@ -1,0 +1,844 @@
+.topbar{
+     background-color: #333; 
+    /* border: 1px solid #333; */
+    height:40px;
+}
+body,ul,li{
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none; /*去掉链接下面的下划线*/
+}
+.container{
+     /* border: 1px solid #333;  */
+    margin: 0 auto; /*设置居中*/
+    width: 1260px;
+}
+.container::before ,.container::after ,
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+
+.container::after,.clearfix::after{
+    clear: both;
+}
+.topbar a {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.topbar a:hover{ /*当鼠标移上去 变成白色*/
+     color:#fff;
+}
+.topbar-nav{
+    float: left; /*将内容浮动到最左边*/
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+}
+.topbar-nav span{
+    font-size: 12px;
+    color: #424242;
+    font-family: sans-serif;
+    margin: 0.5em;
+}
+.topbar-info{
+     float: right; /*将内容浮动到最右边 */
+}
+.topbar-cart{
+    float:right;  /*将内容浮动到最右边*/
+
+}
+.topbar-cart a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 120px;
+    background-color: #424242;
+}
+.topbar-cart a:hover{
+    background-color:#fff;
+    color:#ff6700;
+}
+.topbar-cart a span{
+    margin-left: -4px;
+    font-size: 12px;
+}
+.topbar-info{
+    margin-right: 15px;
+}
+.topbar-info a{
+    float: left;
+    padding: 0 5px;
+    line-height: 40px;
+    height: 40px;
+}
+.topbar-info span{
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #424242;
+    line-height: 40px;
+    height: 40px;
+}
+.topbar-info .sep{
+    padding: 0 10px;
+}
+/*导航栏*/
+.header {
+     height:100px;
+
+}
+.header-logo {
+     float: left;
+     width: 62px;
+     margin-top: 22px;
+     /* border: 1px solid black; */
+     height: 55px;
+}
+.header-logo a{
+     display: block;
+     width: 55px;
+     height: 55px;
+     background: #ff6700 url(../img/mi.png) no-repeat 50% 50%;
+     
+}
+.header-logo a.lr{
+    text-align: left;
+    text-indent: -999999em;
+     
+}
+/*header-nav*/
+.header-nav{
+    float: left;
+    width: 820px;
+    /* border: 1px solid black;  */
+    height: 100px;
+    font-family: Microsoft YaHe;
+}
+.header-nav .nav-list{
+    width: 820px;
+    height:88px;
+    font-size: 16px;
+    padding: 12px 0 0 30px;
+}
+.header-nav .nav-list .nav-category{
+    float: left;
+    width: 127px;
+    padding: 0 15px 0 0 ;
+
+}
+.header-nav .nav-list .nav-category a{
+    display: block;
+    text-align: right;
+    padding: 26px  0 38px;
+    color: #333;
+}
+
+.header-nav .nav-list .nav-item{
+    float: left;
+}
+.header-nav .nav-list .nav-item a {
+    display: block;
+    padding: 26px  10px 38px;
+    color: #333;
+}
+.header-nav .nav-list .nav-item a:hover{
+    color: #ff6700;
+}
+.header-search{
+    float: right;
+    width: 296px;
+    border: 1px solid black;
+    height: 50px;
+    margin-top: 25px;
+}
+.header-search .search-form{
+    position: relative;
+    display: block;
+    width: 296px;
+    height: 50px;
+}
+.header-search .search-form .search-text{
+    display: block;
+    width: 245px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+}
+.header-search .search-form .search-btn{
+    position: absolute;
+    top:0;
+    right:0;
+    display: block;
+    width: 52px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    font-size: 24px;
+    line-height: 24px;
+    background:#fff;
+    color: #616161;
+    outline: 0;
+}
+.header-search .search-form .search-btn:hover{
+    background: #ff6700;
+    color: #fff;
+}
+.seckill {
+    background-color: #f5f5f5;
+}
+.seckill-nav{
+    margin: -68px 0 22px ;
+}
+.seckill .seckill-head{
+    margin-top: 19px;
+    height: 170px;
+    background: url("../img/head.jpg") no-repeat 50% 50%;
+}
+.seckill-nav ul {
+    height: 68px;
+    background: #414141;
+}
+.seckill-nav li{
+    display: block;
+    float: left;
+    height:68px ;
+    width:20% ;
+    color: #fff;
+    line-height: 68px;
+    text-align: center;
+    cursor: pointer;   
+}
+.seckill-nav .active{
+    background-color: #f1393a;
+}
+.seckill-nav  li em{
+    display: inline-block;
+    margin-left: 30px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1;/*与字体等高*/
+    vertical-align: middle;
+}
+.seckill-nav  li span{
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.seckill-nav ul li span em {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 0;
+    font-style: normal;
+    text-align: left;
+    line-height: 20px;
+}
+
+.seckill-goods ul{
+    /* border:  1px solid black; */
+    margin-right: -13px;
+}
+.seckill-goods li{
+    float: left;
+    width: 400px;
+    height: 190px;
+    background-color: #fff;
+    /* border: 1px solid black;  */
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
+
+.seckill-goods  .bg1{
+    float: left;
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid red; */
+
+}
+.seckill-goods  .bg1 img{
+    height: 190px;
+}
+.seckill-goods .info{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+.seckill-notice{
+    font-size: 12px;
+    color: #999;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+.seckill-goods  .bg2{
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.seckill-goods .bg2 img{
+    height: 190px;
+}
+.seckill-goods .info1{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info1 .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info1 .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info1 .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info1 .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info1 .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info1 .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+.seckill-goods  .bg3{
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.seckill-goods .bg3 img{
+    height: 190px;
+}
+.seckill-goods .info2{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info2 .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info2 .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info2 .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info2 .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info2 .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info2 .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+
+.seckill-goods  .bg4{
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.seckill-goods .bg4 img{
+    height: 190px;
+}
+.seckill-goods .info3{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info3 .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info3 .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info3 .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info3 .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info3 .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info3 .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+.seckill-goods  .bg5{
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.seckill-goods .bg5 img{
+    height: 190px;
+}
+.seckill-goods .info4{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info4 .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info4 .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info4 .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info4 .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info4 .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info4 .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+
+.seckill-goods  .bg6{
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.seckill-goods .bg6 img{
+    height: 190px;
+}
+.seckill-goods .info5{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info5 .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info5 .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info5 .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info5 .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info5 .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info5 .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+
+.seckill-goods  .bg7{
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.seckill-goods .bg7 img{
+    height: 190px;
+}
+.seckill-goods .info6{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info6 .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info6 .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info6 .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info6 .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info6 .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info6 .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+
+.seckill-goods  .bg8{
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.seckill-goods .bg8 img{
+    height: 190px;
+}
+.seckill-goods .info7{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info7 .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info7 .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info7 .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info7 .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info7 .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info7 .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+
+
+.seckill-goods  .bg9{
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.seckill-goods .bg9 img{
+    height: 190px;
+}
+.seckill-goods .info8{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    margin-left: 210px;
+    padding-top: 30px;
+}
+.seckill-goods .info8 .name{
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seckill-goods .info8 .tips{
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+.seckill-goods .info8 .price{
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+}
+.seckill-goods .info8 .price del{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.seckill-goods .info8 .btn{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+    border: 1px solid #f1393a;
+}
+.seckill-goods .info8 .person{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
